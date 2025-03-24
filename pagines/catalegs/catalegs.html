@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <!--título de la página.-->
-    <title>WebSellos</title>
+    <title>WebSegells - de Carles Rodriguez i Rovira</title>
     <!--fuente que utilizaremos será de google.-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 
     <!--fichero de estilos que utilizaremos en la página.-->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../../estilos/estilos.css">
 </head>
 
 <body>
@@ -22,44 +22,16 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="./paissos.html">PAÏSSOS</a></li>
-            <li><a href="./basiques.html">SÈRIES BÀSIQUES</a></li>
-            <li><a href="./fulles.html">FULLES D'ALBUM</a></li>
-            <li><a href="./catalegs.html">CATÀLEGS FILATÈLICS</a></li>
+        <ul class = "llista-menu">
+            <li><a href="../../index.html">NOTÍCIES</a></li>
+            <li><a href="../paissos/aland.html">PAÏSSOS</a></li>
+            <li><a href="../basiques/basiques.html">SÈRIES BÀSIQUES</a></li>
+            <li><a href="../repetits/repes-eur.html">REPETITS</a></li>
+            <li><a href="../fulles/fulles.html">FULLES D'ALBUM</a></li>
+            <li><a href="../catalegs/catalegs.html">CATÀLEGS FILATÈLICS</a></li>
+            <li><a href="../links.html">LINKS</a></li>
         </ul>
-        <img id="random-image" src="" alt="Segell aleatori">
-
     </nav>
-
-    <script>
-        // Array amb els camins de les imatges
-        const imatges = [
-            "../imagenes/segells/segell02.jpg",
-            "../imagenes/segells/segell03.jpg",
-            "../imagenes/segells/segell01.jpg",
-            "../imagenes/segells/segell04.jpg",
-            "../imagenes/segells/segell05.jpg",
-            "../imagenes/segells/segell06.jpg"
-        ];
-
-        // Funció per assignar una imatge aleatòria
-        function canviarImatge() {
-            const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
-            const imatgeElement = document.getElementById("random-image");
-            
-            // Suavitza el canvi d'imatge amb una transició
-            imatgeElement.style.opacity = 0; // Oculta l'actual
-            setTimeout(() => {
-                imatgeElement.src = imatgeAleatoria; // Assigna la nova
-                imatgeElement.style.opacity = 1; // Torna a mostrar-la
-            }, 500); // Temps de la transició (0.5 segons)
-        }
-
-        // Configura una imatge inicial i després canvia cada 5 segons
-        canviarImatge();
-        setInterval(canviarImatge, 3000); // Canvia cada 5 segons
-    </script>
 
     <aside>
 
@@ -94,7 +66,7 @@
 
     <main>
     
-        <h1 class="titol-silueta">FULLES D'ALBUM</h1>
+        <h1 class="titol-silueta">CATÀLEGS DE SEGELLS</h1>
      
     </main>
 
@@ -103,12 +75,6 @@
             <ul class="lista-paisos">
                 <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
                 <li><a href="../catalegs/deutschland_2024_bundesrepublik_michel_katalog_20182019_mich.pdf" target="_blank">MICHEL ALEMANYA 2024</a></li>
-                <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
-                <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
-                <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
-                <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
-                <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
-                <li><a href="../catalegs/baltische_staaten_2023_michel_katalog_20182019_michel_rundsc.pdf" target="_blank">MICHEL PAÏSSOS BÀLTICS 2023</a></li>
             </ul>
         </div>        
     </section>

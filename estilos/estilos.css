@@ -330,4 +330,94 @@ h4 {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+
+/* Contenidor principal en Flexbox Repetits */
+.contenidorRepes {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Llista de països (esquerra) */
+.llista-paisos {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: -20px;
+}
+
+.llista-paisos h3 {
+    text-align: center;
+}
+
+.llista-paisos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.llista-paisos li {
+    margin-bottom: 10px;
+}
+
+.llista-paisos a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    background: darkslateblue;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.llista-paisos a:hover {
+    background: salmon;
+}
+
+/* Zona de segells (dreta) */
+.contingut-segells {
+    width: 75%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    min-height: 500px; /* Alçada mínima de 500px */
+    max-height: 500px; /* Evitem que creixi més */
+    overflow-y: auto; /* Afegim barra de desplaçament si cal */
+}
+
+/* Ocultem tots els continguts per defecte */
+.segells {
+    display: none;
+}
+
+/* Quan es fa clic en un enllaç, el contingut corresponent es mostra */
+.segells:target {
+    display: block;
+}
+
+/* Per defecte, mostrem el missatge inicial */
+.segells.active {
+    display: block;
+}
+
+/* Disseny de les imatges */
+.imatges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra les imatges horitzontalment */
+    align-items: center; /* Opcional: centra verticalment si cal */
+}
+
+.imatges img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
     
