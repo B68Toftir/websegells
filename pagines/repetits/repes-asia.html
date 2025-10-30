@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!--título de la página.-->
+    <title>WebSegells - de Carles Rodriguez i Rovira</title>
+    <!--fuente que utilizaremos será de google.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <!--fichero de estilos que utilizaremos en la página.-->
+    <link rel="stylesheet" href="../../estilos/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titol-silueta">BENVINGUTS A LA MEVA COLECCIÓ DE SEGELLS</h1>
+    </header>
+
+    <nav>
+        <ul class = "llista-menu">
+            <li><a href="../../index.html">ACTUALITZACIONS WEB</a></li>
+            <li><a href="../paissos/aland.html">FALTES PAÏSSOS</a></li>
+            <li><a href="../basiques/alemanya.html">FALTES BÀSIQUES</a></li>
+            <li><a href="../repetits/repes-asia.html">REPETITS</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <form id="form1">
+            <fieldset>
+                <legend>Formulari contacte</legend>
+                <label>Nom:</label>
+                <input text="text" id="nom" name="fnom" value="Nom"><br><br>
+                <label>Cognom:</label>
+                <input text="text" id="cognom" name="fcognom" value="Cognom"><br><br>
+                <label for="assumpte">ASSUMPTE</label>
+                <select id="assumpte" name="assumpte">
+                    <option value="est">INTERCANVI</option>
+                    <option value="far">COMPRA</option>
+                    <option value="lat">VENDA</option>
+                    <option value="lit">ALTRES</option>
+                </select><br><br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </aside>
+
+    <main>
+        <h1 class="titol-silueta">ELS MEUS SEGELLS REPETITS</h1>
+     </main>
+
+     <section>
+        <div class="central">
+            <ul class="lista-paisos">
+                <li><a href="repes-afr.html">ÀFRICA</a></li>
+                <li><a href="repes-ame.html">AMÈRICA</a></li>
+                <li><a href="repes-asia.html">ÀSIA</a></li>
+                <li><a href="repes-eur.html">EUROPA</a></li>
+                <li><a href="repes-oce.html">OCEANIA</a></li>
+            </ul>
+            <h2 class="paissos-h2">REPETITS D'ÀSIA</h2>
+            <section class="contenidorRepes">
+                <!-- Llista de països -->
+                <aside class="llista-paisos">
+                    <ul>
+                        <li><a href="#ban">BANGLA DESH</a></li>
+                        <li><a href="">CEILAN</a></li>
+                        <li><a href="">HONG KONG</a></li>
+                        <li><a href="#ind">ÍNDIA</a></li>
+                        <li><a href="#ina">INDONÈSIA</a></li>
+                        <li><a href="">ISRAEL</a></li>
+                        <li><a href="#jpn">JAPÓ</a></li>
+                        <li><a href="#kaz">KAZAKHSTAN</a></li>
+                        <li><a href="">PAKISTAN</a></li>
+                        <li><a href="#uzb">UZBEKISTAN</a></li>
+                        <li><a href="">XINA</a></li>
+                    </ul>
+                </aside>
+            
+                <!-- Contingut de segells -->
+                <div class="contingut-segells">
+
+                    <div id="ban" class="segells">
+                        <h3>SEGELLS DE BANGLADESH</h3>
+                        <div class="imatges2">
+                            <img src="../../imagenes/repes/asia/bangladesh01.jpg" alt="">
+                                                     
+                        </div>
+                    </div>
+                    
+                    <div id="ind" class="segells">
+                        <h3>SEGELLS D'ÍNDIA'</h3>
+                        <div class="imatges2">
+                            <img src="../../imagenes/repes/asia/india01.jpg" alt="">
+                            <img src="../../imagenes/repes/asia/india02.jpg" alt="">
+                            <img src="../../imagenes/repes/asia/india03.jpg" alt="">                            
+                        </div>
+                    </div>
+
+                    <div id="ina" class="segells">
+                        <h3>SEGELLS D'INDONÈSIA</h3>
+                        <div class="imatges2">
+                            <img src="../../imagenes/repes/asia/indonesia01.jpg" alt="">                            
+                        </div>
+                    </div>
+                    
+                    <div id="jpn" class="segells">
+                        <h3>SEGELLS DE JAPÓ>/h3>
+                        <div class="imatges2">
+                            <img src="../../imagenes/repes/asia/japo01.jpg" alt="">                            
+                        </div>
+                    </div>
+
+                    <div id="kaz" class="segells">
+                        <h3>SEGELLS DE KAZAKHSTAN</h3>
+                        <div class="imatges">
+                            <img src="../../imagenes/repes/asia/kazak01.jpg" alt="">                            
+                        </div>
+                    </div>
+
+                    <div id="uzb" class="segells">
+                        <h3>SEGELLS DE UZBEKISTAN</h3>
+                        <div class="imatges">
+                            <img src="../../imagenes/repes/asia/uzb01.jpg" alt="">                            
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <table class="lista-faltes">
+                
+            </table>
+        </div>  
+    </section>
+
+    <footer>
+        (c) Carles Rodriguez i Rovira
+    </footer>
+
+</body>
+</html>
